@@ -1,0 +1,11 @@
+fastapi
+uvicorn
+sentence-transformers
+faiss-cpu
+numpy
+pytest
+psycopg[binary]
+tenacity
+mcp==1.6.0
+httpx
+pytest-asyncio

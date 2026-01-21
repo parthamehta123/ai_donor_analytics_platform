@@ -1,0 +1,102 @@
+# ----------------------
+# Python
+# ----------------------
+__pycache__/
+*.py[cod]
+*.pyo
+*.pyd
+*.so
+*.egg-info/
+.eggs/
+dist/
+build/
+pip-wheel-metadata/
+.pytest_cache/
+.coverage
+htmlcov/
+.cache/
+.mypy_cache/
+.ruff_cache/
+.tox/
+.nox/
+*.log
+
+# ----------------------
+# Virtual environments
+# ----------------------
+venv/
+.venv/
+env/
+ENV/
+.python-version
+
+# ----------------------
+# Jupyter / notebooks
+# ----------------------
+.ipynb_checkpoints/
+
+# ----------------------
+# Environment variables
+# ----------------------
+.env
+.env.*
+*.env
+
+# ----------------------
+# OS-specific
+# ----------------------
+.DS_Store
+Thumbs.db
+
+# ----------------------
+# VSCode / IDEs
+# ----------------------
+.vscode/
+.idea/
+*.swp
+*.swo
+
+# ----------------------
+# Docker
+# ----------------------
+*.pid
+docker-data/
+.pgdata/
+postgres-data/
+
+# ----------------------
+# Local databases / volumes
+# ----------------------
+data/
+db_data/
+volumes/
+
+# ----------------------
+# RAG / embeddings artifacts
+# ----------------------
+faiss_index/
+*.faiss
+*.index
+embeddings/
+vectorstore/
+chroma_db/
+
+# ----------------------
+# MCP / Claude local configs (keep templates, ignore personal paths)
+# ----------------------
+docs/claude_mcp_config.json
+docs/vscode_mcp.json
+
+# ----------------------
+# Downloads / scratch
+# ----------------------
+downloads/
+tmp/
+scratch/
+notes/
+
+# ----------------------
+# MacOS cruft
+# ----------------------
+.AppleDouble
+.LSOverride

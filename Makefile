@@ -31,14 +31,14 @@ dev:
 run:
 	uvicorn app.main:app --reload
 
-# CI-safe default
+# CI-safe tests
 test:
 	pytest tests
 
 test-unit:
 	pytest -m unit
 
-# Safe when no integration tests exist
+# Allow empty integration suite without failing
 test-integration:
 	pytest -m integration || echo "No integration tests collected (ok)"
 

@@ -1,4 +1,7 @@
 from app.tools import get_campaign_performance
+import pytest
+
+pytestmark = pytest.mark.unit
 
 
 def test_db_contract_schema():

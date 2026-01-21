@@ -1,13 +1,22 @@
 [build-system]
-requires = ["setuptools"]
+requires = ["setuptools>=68.0"]
 build-backend = "setuptools.build_meta"
 
 [project]
 name = "ai-donor-analytics-platform"
 version = "0.1.0"
+description = "Portfolio-grade AI backend with FastAPI, RAG, RBAC, MCP"
+requires-python = ">=3.11"
 
 [tool.setuptools.packages.find]
 where = ["."]
+include = ["app*", "scripts*"]
 
 [tool.pytest.ini_options]
 asyncio_mode = "auto"
+python_files = ["test_*.py"]
+
+markers = [
+  "unit: fast tests with no external dependencies",
+  "integration: tests that require real DB or services"
+]

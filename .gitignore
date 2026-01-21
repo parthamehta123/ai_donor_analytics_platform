@@ -1,102 +1,37 @@
-# ----------------------
 # Python
-# ----------------------
 __pycache__/
-*.py[cod]
+*.pyc
 *.pyo
 *.pyd
-*.so
 *.egg-info/
 .eggs/
 dist/
 build/
-pip-wheel-metadata/
-.pytest_cache/
-.coverage
-htmlcov/
-.cache/
-.mypy_cache/
-.ruff_cache/
-.tox/
-.nox/
-*.log
 
-# ----------------------
-# Virtual environments
-# ----------------------
+# Virtualenv
 venv/
-.venv/
-env/
-ENV/
-.python-version
-
-# ----------------------
-# Jupyter / notebooks
-# ----------------------
-.ipynb_checkpoints/
-
-# ----------------------
-# Environment variables
-# ----------------------
 .env
 .env.*
-*.env
 
-# ----------------------
-# OS-specific
-# ----------------------
-.DS_Store
-Thumbs.db
-
-# ----------------------
-# VSCode / IDEs
-# ----------------------
+# IDE
 .vscode/
 .idea/
-*.swp
-*.swo
+.DS_Store
 
-# ----------------------
+# Ruff / pytest
+.pytest_cache/
+.ruff_cache/
+
 # Docker
-# ----------------------
-*.pid
-docker-data/
-.pgdata/
-postgres-data/
+*.log
 
-# ----------------------
-# Local databases / volumes
-# ----------------------
-data/
-db_data/
-volumes/
+# OS junk
+Thumbs.db
 
-# ----------------------
-# RAG / embeddings artifacts
-# ----------------------
-faiss_index/
-*.faiss
-*.index
-embeddings/
-vectorstore/
-chroma_db/
+# Secrets
+*.pem
+*.key
 
-# ----------------------
-# MCP / Claude local configs (keep templates, ignore personal paths)
-# ----------------------
+# Local configs
 docs/claude_mcp_config.json
 docs/vscode_mcp.json
-
-# ----------------------
-# Downloads / scratch
-# ----------------------
-downloads/
-tmp/
-scratch/
-notes/
-
-# ----------------------
-# MacOS cruft
-# ----------------------
-.AppleDouble
-.LSOverride

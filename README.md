@@ -104,6 +104,37 @@ curl -H "x-role: analyst" "http://localhost:8000/tools/campaign-performance?clie
 
 ------------------------------------------------------------------------
 
+## Manual Smoke Tests (Local Only)
+
+This project includes optional manual smoke scripts for validating the full system locally.
+
+These are intentionally not part of pytest because they require:
+- Running Docker services
+- Real PostgreSQL container
+- Real FastAPI process
+- MCP runtime
+
+Location:
+- scripts/smoke_api.py
+- scripts/smoke_mcp.py
+
+Run locally:
+
+```bash
+make up
+
+python scripts/smoke_api.py
+python scripts/smoke_mcp.py
+```
+
+These validate:
+- End-to-end API → DB behavior
+- RBAC enforcement
+- MCP tool execution
+- RAG responses
+
+------------------------------------------------------------------------
+
 ## MCP Integration
 
 The project includes a fully working MCP server:
